@@ -15,15 +15,22 @@ const getUser = () => {
       console.log(usuario);
       usuario.forEach((usuario) => {
         loginbox.innerHTML += `
-        
-        
+                
         <div class="card my-3 bg-dark">
             <div class="row g-10 p-5">
             
             <div class="col-md-12 text-light d-flex flex-column justify-content-center">
             <h2>${usuario.nombre}</h2>    
-            <p> Su correo es: ${usuario.email}</p>
-            <p> Su edad es:  ${usuario.edad}</p>
+            <p> Su email es: ${usuario.email}</p>
+            <p> Su password es:  ${usuario.password}</p>
+
+            key = "${usuario.password}"
+            password = input("Introduce la clave: ")
+            if key == ${usuario.password}.lower():
+                print("La clave coincide")
+            else:
+                print("La clave no coincide")
+
             <div class="d-none">
                       </div>
             </div>
