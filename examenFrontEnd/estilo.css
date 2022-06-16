@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+    background-color: rgb(59,186,241)
+}
+*{
+	box-sizing: content-box;
+}
+
+.container{
+    background-color: rgb(59,186,241)    
+}
+.container-header {
+    background-color: rgb(49, 169, 220);
+    padding: 3px;
+    margin-bottom: 30px;
+}
+.container-body {
+    background-color: rgb(59,186,241);
+}
+.container-body table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.input{
+    margin-bottom: 8px;
+    padding: 8px;
+	border: 1px solid rgb(248, 248, 248);
+}
+.circular{
+    margin-top: 70px;
+    border: 1px solid rgb(27, 138, 219);
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(27, 138, 219);
+    margin-right: 20px;
+
+}
+
+.circular svg{
+    margin-top: 20px;
+    margin-left: 35px;
+    filter: drop-shadow(-3px 3px 1px #000000);
+}
+.btnLogin{
+    color: white;
+    background-color: rgb(27, 138, 219);
+    border: 1px solid #FFFFFF;
+    padding: 8px;
+    width: 80px;
+}

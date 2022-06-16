@@ -1,0 +1,56 @@
+.headerRegister, .header-primary{
+    background: #009688;
+    color: #FFF;
+  }
+  
+  .headerUpdate{
+    background: #007bff;
+    color: #FFF;
+  }
+
+#formUsuario{
+  display: none;
+}
+
+body{
+	margin: 0;
+    background-color: rgb(59,186,241)
+}
+*{
+	box-sizing: content-box;
+}
+
+.container{
+    background-color: rgb(59,186,241)    
+}
+
+.btn{
+  padding: 8px;
+}
+
+.btn-warning{
+  color: black;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.btn-danger{
+  color: black;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.btn-primary{
+  color: white;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#containerTable table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center{
+  text-align: center;
+}
