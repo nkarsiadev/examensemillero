@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', function (e) {
 
     function validateEmail(email) {
         if (email != "") {
-            if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(email)) {
+            if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
                 Swal.fire(
                     'El email es incorrecto',
                     '',

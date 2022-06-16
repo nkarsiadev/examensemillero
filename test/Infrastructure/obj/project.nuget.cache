@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "alimf7gU+YbmJc2nCILkHxMxIiw4Ra+ZpEykK6ZJUz0AVPeAe46EA/8eWPaqjUkwQGsDFKOocGDQRfufaEhQzA==",
+  "dgSpecHash": "nhbcdJnOxl9lbmX8hR6C4BU3KZJdXbIpyzB/nwjoiDirBNb2qdhq6Gc0C/Ua7x4FEQlOn/6ce7d7EmoR98NZqg==",
   "success": true,
-  "projectFilePath": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\test\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\Login\\examensemillero\\test\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.4\\microsoft.aspnetcore.authentication.jwtbearer.5.0.4.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

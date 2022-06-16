@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nWtqSSylsnPiKYGODvgJrSswCqao//ZdSu7XFE+7Gdh86ApR86qv5vSlRUg8vm8fokq1srt2M5JZS/TD/f1H9A==",
+  "dgSpecHash": "fh2vrqEdHAUnRnWMG7nW0sf3cZeb2SRn7nfIqOS2aITtfPdaA2tYYYVXgRqLEVFAEowIXYuSjcWrXpmnOp4dAg==",
   "success": true,
-  "projectFilePath": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\test\\Core\\Core.csproj",
+  "projectFilePath": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\Login\\examensemillero\\test\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

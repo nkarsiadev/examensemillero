@@ -43,10 +43,5 @@ namespace API.Controllers
                  
         }
 
-    //     public class JwTPackage
-    // {
-    //     public string UserName { get; set; }
-    //     public string Token { get; set; }
-    // }
     }
 }

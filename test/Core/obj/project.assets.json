@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\test\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\Login\\examensemillero\\test\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\test\\Core\\Core.csproj",
+      "projectPath": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\Login\\examensemillero\\test\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\test\\Core\\obj\\",
+      "outputPath": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\Login\\examensemillero\\test\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

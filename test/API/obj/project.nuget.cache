@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uJ45D5KvywBRA6j/sIclgtVhgYYMkPlCXOgJL71/H3geV5sy01lf4FgeP93xEk2t2kUu4KxbnouMzpvSkakp3w==",
+  "dgSpecHash": "oVx2x2e3hVfwyGgQUxPTBmTiTVa97rvGgEuL02OLNMe6mYsh2KBGUBcCPY3UcWErAqArri2r7DfR64CX+s6QfA==",
   "success": true,
-  "projectFilePath": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\test\\API\\API.csproj",
+  "projectFilePath": "C:\\TATIANA\\Banco Pichincha\\THURSDAY\\Login\\examensemillero\\test\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.4\\microsoft.aspnetcore.authentication.jwtbearer.5.0.4.nupkg.sha512",
