@@ -12,21 +12,23 @@
 
 <body>
     <div class="container-general">
+        <script src="./services/validationPermis.js"></script>
         <h2 class="container-tittle">Listado de todos los usuarios &#128077</h2>
+        <br>
+        <div class="centerDiv">
+            <button onclick="closeSession()" class="button-submit">Serrar cession</button>
+        </div>
+
         <br>
         <table id="listadoUsuarios">
             <tr>
+                <th>N°</th>
                 <th>Nombre y Apellido</th>
                 <th>Correo</th>
                 <th>Edad</th>
                 <th>Estado</th>
                 <th>Rol</th>
                 <th>Acciones</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
             </tr>
         </table>
     </div>
