@@ -1,0 +1,14 @@
+body{
+    margin: o;
+}
+
+*{
+    box-sizing: border-box;
+}
+table{
+    width: 100%;
+}
+.content-container{
+    width: 60%;
+    margin: 0 auto;
+}
