@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.banco.pichincha.pruebaback.enities.Usuarios;
+import com.banco.pichincha.pruebaback.exception.UsuariosServiceException;
 import com.banco.pichincha.pruebaback.repository.UsuariosRepository;
 
 @Service
@@ -19,14 +20,24 @@ public class UsuariosService implements UsuariosServiceI {
         return usuariosRepository.findAll();
     }
 
-    public Usuarios getUsuarioName(String valueUserName) {
+    public Usuarios getUsuarioName(String valueUserName) throws UsuariosServiceException {
         Optional<Usuarios> usuarioEncontrado = usuariosRepository.findByNameUsuario(valueUserName);
-        return usuarioEncontrado.get();
+        try {
+            return usuarioEncontrado.get();
+        } catch (Exception e) {
+            throw new UsuariosServiceException(valueUserName);
+        }
+
     }
 
-    public Usuarios getUsuarioEmail(String valueEmail) {
+    public Usuarios getUsuarioEmail(String valueEmail) throws UsuariosServiceException {
         Optional<Usuarios> usuarioEncontrado = usuariosRepository.findByEmailUsuario(valueEmail);
-        return usuarioEncontrado.get();
+        try {
+            return usuarioEncontrado.get();
+        } catch (Exception e) {
+            throw new UsuariosServiceException(valueEmail);
+        }
+
     }
 
     public Usuarios verifyUserByNameAndPassword(String name, String password) {

@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 import com.banco.pichincha.pruebaback.enities.Session;
 import com.banco.pichincha.pruebaback.enities.Usuarios;
 
+import de.mkammerer.argon2.Argon2;
+import de.mkammerer.argon2.Argon2Factory;
+
 @Service
 public class SessionService implements SessionServiceI {
 
@@ -19,18 +22,26 @@ public class SessionService implements SessionServiceI {
         } else {
             usuarioEncontrado = usuariosService.verifyUserByMailndPassword(mail, password);
         }
+
         if (usuarioEncontrado != null) {
             Session session = new Session();
             session.setNombreUsuario(usuarioEncontrado.getNameUsuario());
             session.setEmailUsuario(usuarioEncontrado.getEmailUsuario());
-            session.setIdRol(usuarioEncontrado.getRol().getIdRol().toString());
-            session.setPasswordUsuario(usuarioEncontrado.getPasswordUsuario());
+            session.setIdRol(generateHashValueString(usuarioEncontrado.getRol().getIdRol().toString()));
+            session.setPasswordUsuario(generateHashValueString(usuarioEncontrado.getPasswordUsuario()));
             session.setNombreRol(usuarioEncontrado.getRol().getNameRol());
-            session.setTokenSession("token");
+            session.setTokenSession(("token"));
 
             return session;
         } else {
             return null;
         }
+    }
+
+    public String generateHashValueString(String value) {
+        Argon2 argon2 = Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id, 32, 64);
+        String hashValueEncripted = argon2.hash(10, 64, 1, value.toCharArray());
+
+        return hashValueEncripted;
     }
 }

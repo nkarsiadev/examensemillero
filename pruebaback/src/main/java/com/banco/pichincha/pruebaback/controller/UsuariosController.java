@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.banco.pichincha.pruebaback.enities.Usuarios;
+import com.banco.pichincha.pruebaback.exception.UsuariosServiceException;
 import com.banco.pichincha.pruebaback.service.UsuariosServiceI;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,7 +36,8 @@ public class UsuariosController {
     }
 
     @PostMapping(value = "/usuarios/name")
-    public ResponseEntity<Usuarios> getByUserNameExist(@RequestParam("name") String name) {
+    public ResponseEntity<Usuarios> getByUserNameExist(@RequestParam("name") String name)
+            throws UsuariosServiceException {
         Usuarios usuario = usuariosService.getUsuarioName(name);
         if (usuario != null) {
             return new ResponseEntity<Usuarios>(usuario, HttpStatus.OK);
@@ -45,7 +47,8 @@ public class UsuariosController {
     }
 
     @PostMapping(value = "/usuarios/mail")
-    public ResponseEntity<Usuarios> getByEmailOfUser(@RequestParam("mail") String mail) {
+    public ResponseEntity<Usuarios> getByEmailOfUser(@RequestParam("mail") String mail)
+            throws UsuariosServiceException {
         Usuarios usuario = usuariosService.getUsuarioEmail(mail);
         if (usuario != null) {
             return new ResponseEntity<Usuarios>(usuario, HttpStatus.OK);
