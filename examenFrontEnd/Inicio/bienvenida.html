@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumir Api Rest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form id="formUsuario" name="formUsuario" class="form-horizontal">
+        <input type="hidden" id="idUsuario" name="idUsuario" value="">            
+        <div class="row g-4 pt-3 pb-3">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6" id="inputNombre">
+                        <label for="txtNombre" class="form-label">Nombre: </label>
+                        <input type="text" class="form-control" id="txtNombre" required>
+                        <div class="input-error"></div>
+                    </div>
+                    <div class="col-md-6" id="inputApellido">
+                        <label for="txtApellido" class="form-label">Apellido: </label>
+                        <input type="text" class="form-control" id="txtApellido" required>
+                        <div class="input-error"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" id="inputEdad">
+                        <label for="intEdad" class="form-label">Edad: </label>
+                        <input type="number" class="form-control" id="intEdad" required>
+                        <div class="input-error"></div>
+                    </div>
+                    <div class="col-md-6" id="selectEstado">
+                        <label for="txtApellido" class="form-label">Estado: </label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione estado</option>
+                            <option value="Activo">Activo</option>
+                            <option value="Inactivo">Inactivo</option>
+                          </select>
+                        <div class="input-error"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" id="inputEmail">
+                        <label for="txtEmail" class="form-label">Email: </label>
+                        <input type="text" class="form-control" id="txtEmail" required>
+                        <div class="input-error"></div>
+                    </div>
+                    <div class="col-md-6" id="inputPassword">
+                        <label for="txtPassword" class="form-label">Password: </label>
+                        <input type="password" class="form-control" id="txtPassword" required>
+                        <div class="input-error"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile-footer">
+          <button id="btnActionForm" class="btn btn-success" type="submit">
+            <i class="fa fa-fw fa-lg fa-check-circle"></i><span id="btnText">Guardar</span>
+          </button>&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-danger" type="button" data-bs-dismiss="modal" >
+            <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</button>
+        </div>
+      </form>
+  
+    <div class="container">
+        <div class="row"><div class="col text-center"><h1 id="mensajeBienvenida"></h1></div></div>
+        <div class="row"><div class="col text-end"><button class='btn btn-primary'>Nuevo</button></div></div>
+        <div class="row pt-4" id="containerTable">
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>email</th>
+                        <th>Edad</th>
+                        <th>Estado</th>
+                        <th>Options</th>
+                      </tr>
+                    </thead>
+                    <tbody id="datosUsuario">
+                        <tr><td>Cargando...</td></tr>
+                    </tbody>
+                  </table>
+        </div>
+    </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="functionsUsuario.js"></script>
+</body>
+</html>
