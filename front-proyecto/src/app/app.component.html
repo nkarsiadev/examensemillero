@@ -1,0 +1,27 @@
+<app-ver-usuario></app-ver-usuario>
+<form [formGroup]="agregarUsuario" class="form" (ngSubmit)="agregar()">
+    <h2 class="form_title">Iniciar Sesión</h2>
+    <p class="form_paragraph">¿Aún no te registras?<a href="#" class="form_link">Registrate Aquí</a></p>
+  
+    <div class="form_container">
+      <div class="form_group">
+        <label for="email" class="form_label">Correo Electrónico: </label>
+        <input formControlName="email" type="email" id="email" class="form_input" placeholder="Ingrese correo electrónico" autocomplete="off">
+        
+        <span *ngIf="agregarUsuario.get('email')?.invalid && agregarUsuario.get('email')?.touched"  class="form_line">
+            El <strong> email</strong> es requerido
+        </span>
+      </div>
+  
+      <div class="form_group">
+        <label for="password" class="form_label">Contraseña: </label>
+
+        <input formControlName="password" type="password" id="password" class="form_input" placeholder="Ingrese password" autocomplete="off">
+        <span *ngIf="agregarUsuario.get('password')?.invalid && agregarUsuario.get('password')?.touched" class="form_line">
+            El <strong>password</strong> es requerido
+        </span>
+      </div>
+  
+      <button type="submit" class="form_button">Entrar</button>
+    </div>
+</form>
