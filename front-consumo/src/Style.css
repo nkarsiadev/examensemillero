@@ -1,0 +1,78 @@
+.container-custom{
+    padding-top: 25px;
+    max-width: 750px;
+}
+
+.container-general{
+        max-width: 700px;
+        width: 100%;
+        background-color: #93c8e1;
+        height: 500px;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-image: url("https://i0.wp.com/cdn-images-1.medium.com/max/1200/1*VytWprd2ulmw2eIwnHMNJQ.jpeg?resize=581%2C291&ssl=1");
+ background-color: #cccccc;
+}
+
+.container-form{
+    background-color: #ffffff;
+}
+.container-tittle {
+    text-align: center;
+}
+
+.input-container {
+    border: 0px solid #ccc;
+    padding: 10px;
+    /* aling center */
+    text-align: center;
+}
+
+.input-container .error-input {
+    color: rgb(255, 0, 0);
+    margin: 0px;
+    font-size: 13px;
+}
+
+.input {
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+.button-submit{
+    background-color: #93c8e1;
+    width: 25%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    /* center this element*/
+    text-align: center;
+}
+/* estilo de la tabla */
+.centerDiv {
+    
+    margin: 0 auto;
+    float: none;
+}
+
+table {
+    /* center */
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    padding: 15px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
