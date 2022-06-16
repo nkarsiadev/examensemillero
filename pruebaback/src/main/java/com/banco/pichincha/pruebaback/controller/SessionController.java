@@ -18,8 +18,7 @@ public class SessionController {
 
     @PostMapping(value = "/session")
     public ResponseEntity<Session> getSession(@RequestParam("name") String name,
-            @RequestParam("password") String password, @RequestParam("mail") String mail)
-            throws Exception {
+            @RequestParam("password") String password, @RequestParam("mail") String mail) {
         Session session = sessionService.getSession(name, password, mail);
 
         if (session != null) {

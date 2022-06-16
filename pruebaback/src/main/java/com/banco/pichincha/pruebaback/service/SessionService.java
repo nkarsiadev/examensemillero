@@ -16,16 +16,12 @@ public class SessionService implements SessionServiceI {
     @Autowired
     UsuariosServiceI usuariosService;
 
-    public Session getSession(String name, String password, String mail) throws Exception {
+    public Session getSession(String name, String password, String mail) {
         Usuarios usuarioEncontrado = new Usuarios();
-        try {
-            if (mail == "") {
-                usuarioEncontrado = usuariosService.verifyUserByNameAndPassword(name, password);
-            } else {
-                usuarioEncontrado = usuariosService.verifyUserByMailndPassword(mail, password);
-            }
-        } catch (Exception e) {
-            throw new Exception("Usuario no encontrado");
+        if (mail == "") {
+            usuarioEncontrado = usuariosService.verifyUserByNameAndPassword(name, password);
+        } else {
+            usuarioEncontrado = usuariosService.verifyUserByMailndPassword(mail, password);
         }
 
         if (usuarioEncontrado != null) {
