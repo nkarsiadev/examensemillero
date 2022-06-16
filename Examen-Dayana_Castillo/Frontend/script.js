@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", (e)=>{
-  listloginbox();
+  loginbox();
 })
 
 const API_URL = "http://localhost:8080/usuario";
@@ -25,9 +25,7 @@ const getUser = () => {
             <p> Su correo es: ${usuario.email}</p>
             <p> Su edad es:  ${usuario.edad}</p>
             <div class="d-none">
-            <span>1</span>
-            <span>1</span>
-            </div>
+                      </div>
             </div>
             
             </div>
