@@ -1,0 +1,69 @@
+body{
+    margin: 0px;
+    background-color: #ededed;
+} *
+{
+    box-sizing: border-box;
+}
+.manageable-container-block{
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.container {
+    max-width: 474px;
+    width: 100%;
+    background-color: white;
+    height: 428px;
+    border: 1px solid rgb(218, 218, 218);
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 17px;
+}
+.container__tittle{
+    text-align: center;
+}
+.input_container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.input_container2 {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: end;
+}
+.input_container label {
+    display: block;
+}
+.input_container .input{
+    width: 100%;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 5px;
+}
+.input_container .input-error{
+    color: red;
+    margin: 0px;
+}
+.button2 {
+    background-color: #ffdc00;
+    /* margin-left: 153px; */
+    /* margin-top: 7px; */
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    
+}
+.btnCancelar {
+    background-color: #ffdc00;
+    border-radius: 5px;
+    padding: 8px;
+    
+}
+.Mc{
+    text-align: end;
+}
+.form-check-input{
+    text-align: end;
+}
