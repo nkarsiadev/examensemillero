@@ -46,7 +46,15 @@ window.addEventListener('DOMContentLoaded', function (e) {
                         console.log('I was closed by the timer')
                     }
                 })
-            }, error => console.log(error));
+                console.log(response.data);
+            }, error => {
+                console.log(error.response.data);
+                Swal.fire(
+                    error.response.data,
+                    '',
+                    'error'
+                )
+            });
         }
 
 
