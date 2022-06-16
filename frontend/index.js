@@ -16,7 +16,9 @@ formLogin.addEventListener("submit", function (e) {
     .then((res) => {
       console.log(res);
       if (res.data == userInput.value) {
-        alert(`Hola ${userInput.value}!!!`);
+        if (confirm(`Hola ${userInput.value}!!!`)) {
+          location.href = "listarusuarios.html";
+        }
       } else if (res.data == "Usuario no encontrado") {
         alert(res.data);
       } else {
