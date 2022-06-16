@@ -1,10 +1,3 @@
-
-const getValueInput = () => {
-    let inputValue1 = document.querySelector("#input_email").value;
-    console.log("este es el correo", inputValue1);
-    document.querySelector("#frase").innerHTML = `SE CONECTO`;
-}
-
 const fetchData = async () => {
     var response = await fetch('http://localhost:8000/api/listar');
     console.log(response);
@@ -18,7 +11,7 @@ const fetchData = async () => {
         "apellido */
 
 
-async function setTodoList  () {
+async function setTodoList() {
     var json = await fetchData();
     var input_name = document.querySelector('#input_email');
     console.log("este es el correo", input_name);
@@ -30,7 +23,7 @@ async function setTodoList  () {
         var e = element.nombre;
         console.log("este es el correo", e);
         if (input_name.value == e) {
-            alert("Usuario correcto")
+            console.log(input_name.value);
             window.location = "usuarios.html";
             element_container.innerHTML += ` <div class="item-element-content">
                     <h2>${element.nombre}</h2>
