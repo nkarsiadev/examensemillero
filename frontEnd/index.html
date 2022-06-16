@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="headerh"></div>
+    <div class="content-container">
+        <div class="imgcontainer">
+            <img src="./img/banco.png" alt="Banco Pichincha" class="logo">
+        </div>
+        <div class="center-content">
+
+            <form action="" method="post">
+                <div class="container">
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" id="emailUsuario" placeholder="usuario@dominio.com" name="uname" required>
+
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" id="contrasenaUsuario" placeholder="Ingrese Contraseña" name="psw" required>
+
+                    <button type="button" onclick="validar()">Ingresar</button>
+                </div>
+                <div class="container" style="background-color:#95a0b956">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Creado por: Luis Benitez</p>
+
+</footer>
+
+</html>
