@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba AA</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <div class="container-general">
+        <h2 class="container-tittle">Login &#128077</h2>
+        <form id="form-register" action="" method="get">
+            <div id="input-name-container" class="input-container">
+                <label for="input-user"><b>Usuario</b></label><br>
+                <input type="text" id="input-user" name="user" class="input" placeholder="Usuario....." required>
+                <p class="error-input"></p>
+
+
+            </div>
+            <div id="input-last-name-container" class="input-container">
+                <label for="input-pass"><b>Password</b></label><br>
+                <input type="password" id="input-pass" name="input-pass" class="input" placeholder="Pass...">
+                <p class="error-input"></p>
+
+            </div>
+            <div class="input-container">
+                <input class="button-submit" type="submit" onclick="loginSession(event)" value="Ingresar">
+            </div>
+            <br><br><br>
+        </form>
+    </div>
+    <!-- Dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./services/index.js"></script>
+</body>
+
+</html>

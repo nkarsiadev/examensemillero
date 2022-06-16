@@ -23,7 +23,7 @@ public class SessionController {
         if (session != null) {
             return new ResponseEntity<Session>(session, HttpStatus.OK);
         } else {
-            return new ResponseEntity<Session>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<Session>(new Session(), HttpStatus.OK);
         }
     }
 }

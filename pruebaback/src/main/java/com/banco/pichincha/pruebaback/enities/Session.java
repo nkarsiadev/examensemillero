@@ -8,6 +8,10 @@ public class Session {
     private String emailUsuario;
     private String tokenSession;
 
+    public Session(){
+        
+    }
+
     public String getNombreUsuario() {
         return nombreUsuario;
     }
