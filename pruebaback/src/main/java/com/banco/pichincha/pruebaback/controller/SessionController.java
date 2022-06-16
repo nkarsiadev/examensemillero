@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.banco.pichincha.pruebaback.enities.Session;
+import com.banco.pichincha.pruebaback.exception.UsuariosServiceException;
 import com.banco.pichincha.pruebaback.service.SessionServiceI;
 
 @RestController
@@ -17,7 +18,8 @@ public class SessionController {
 
     @PostMapping(value = "/session")
     public ResponseEntity<Session> getSession(@RequestParam("name") String name,
-            @RequestParam("password") String password, @RequestParam("mail") String mail) {
+            @RequestParam("password") String password, @RequestParam("mail") String mail)
+            throws Exception {
         Session session = sessionService.getSession(name, password, mail);
 
         if (session != null) {

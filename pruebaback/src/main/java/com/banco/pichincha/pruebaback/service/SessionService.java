@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.banco.pichincha.pruebaback.enities.Session;
 import com.banco.pichincha.pruebaback.enities.Usuarios;
+import com.banco.pichincha.pruebaback.exception.UsuariosServiceException;
 
 import de.mkammerer.argon2.Argon2;
 import de.mkammerer.argon2.Argon2Factory;
@@ -15,12 +16,16 @@ public class SessionService implements SessionServiceI {
     @Autowired
     UsuariosServiceI usuariosService;
 
-    public Session getSession(String name, String password, String mail) {
+    public Session getSession(String name, String password, String mail) throws Exception {
         Usuarios usuarioEncontrado = new Usuarios();
-        if (mail == "") {
-            usuarioEncontrado = usuariosService.verifyUserByNameAndPassword(name, password);
-        } else {
-            usuarioEncontrado = usuariosService.verifyUserByMailndPassword(mail, password);
+        try {
+            if (mail == "") {
+                usuarioEncontrado = usuariosService.verifyUserByNameAndPassword(name, password);
+            } else {
+                usuarioEncontrado = usuariosService.verifyUserByMailndPassword(mail, password);
+            }
+        } catch (Exception e) {
+            throw new Exception("Usuario no encontrado");
         }
 
         if (usuarioEncontrado != null) {

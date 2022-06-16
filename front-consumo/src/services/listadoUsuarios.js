@@ -7,7 +7,6 @@ window.addEventListener("DOMContentLoaded", async function (event) {
 });
 
 async function generarListaTabla(table) {
-  console.log(table);
   //add more td in the table
   var tr = document.createElement("tr");
   var nombres = document.createElement("td");
