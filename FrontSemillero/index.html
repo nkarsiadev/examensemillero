@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <form id="form-register" action="data.html" method="get">
+            <h2 class="container__title">Ingreso al login</h2>
+
+
+          
+            <div id="email_container" class="input_container">
+                <label for="input_email">Email: </label>
+                <input type="text" id="input_email" class="input" placeholder="email" />
+                <p class="input-error"></p>
+            </div>
+
+            <br>
+
+            <div id="name_container" class="input_container">
+                <label for="input_name">Password: </label>
+                <input type="password" name="name" id="input_name" class="input" placeholder="Nombre:" />
+                <p class="input-error"></p>
+            </div>
+                
+
+            <br>
+
+            <div class="input_container">
+                <button type="submit" class="button">Enviar</button>
+            </div>
+
+        </form>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

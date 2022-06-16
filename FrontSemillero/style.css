@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+    background-color: azure;
+}
+.container{
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    height: 500px;
+    border: 1px solid gray;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container__title{
+    text-align: center;
+}
+.input_container{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.input_container label{
+    display: block;
+}
+
+.input_container .input{
+    width: 100%;
+    border: 1px solid #cbcbcb;
+}
+
+.input_container .input-error{
+    color: red;
+    margin: 0px;
+}
+
+.button{
+    background-color:  yellow;
+    color: black;
+    border-radius: 6px;
+    padding: 5px;
+
+}
+
+.tar{
+    width: 80%;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: rgb(237, 243, 243);
+}
+
