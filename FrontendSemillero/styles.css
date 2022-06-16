@@ -1,0 +1,14 @@
+.content-container{
+    width: 30%;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px blue solid;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+.prueba{
+    text-align: center;
+}
+
