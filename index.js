@@ -15,25 +15,26 @@ async function setTodoList() {
     var json = await fetchData();
     var input_name = document.querySelector('#input_email');
     console.log("este es el correo", input_name);
-    var element_container = document.querySelector('.container-list');
+  /*   var element_container = document.querySelector('.container-list');
     element_container.innerHTML = '';
-
+ */
     for (let index = 0; index < json.length; index++) {
         const element = json[index];
-        var e = element.nombre;
+        var e = element.correo;
         console.log("este es el correo", e);
         if (input_name.value == e) {
             console.log(input_name.value);
             window.location = "usuarios.html";
-            element_container.innerHTML += ` <div class="item-element-content">
+           /*  element_container.innerHTML += ` <div class="item-element-content">
                     <h2>${element.nombre}</h2>
                 </div>
-            `
+            ` */
         } else {
-            element_container.innerHTML += `  <div class="item-element-content">
+            console.log("error");
+           /*  element_container.innerHTML += `  <div class="item-element-content">
                         <h2>usuario y contraseña incorrecto</h2>
                     </div>
-                `
+                ` */
         }
 
         ;
