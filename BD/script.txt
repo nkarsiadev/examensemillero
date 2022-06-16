@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[usuario] (
+    [idUsuario]         INT            IDENTITY (1, 1) NOT NULL,
+    [nombreUsuario]     NVARCHAR (100) NULL,
+    [apellidoUsuario]   NVARCHAR (100) NULL,
+    [emailUsuario]      NVARCHAR (100) NULL,
+    [contrasenaUsuario] NVARCHAR (100) NULL,
+    [edadUsuario]       INT            NULL,
+    [estadoUsuario]     NVARCHAR (100) NULL
+);
