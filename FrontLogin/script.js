@@ -39,4 +39,7 @@ function login(){
         window.location ="usuario.html"; 
         alert("Login Success");
     }      
+	else{
+		alert("no se puede iniciar sesion")
+	}
 }
